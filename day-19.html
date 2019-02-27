@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+li {
+  display: none; /* block ; none */
+}
+div.e1 {
+  width:500px;
+  margin: auto;
+  border: 5px dotted #73AD21;
+}
+
+div.e2 {
+  max-width:500px;
+  margin: auto;
+  border: 5px dotted #73AD21;
+}
+
+div.static {
+  position: static;
+  border: 5px dotted #73AD21;
+}
+
+div.relative {
+  position: relative;
+  left: 50px;
+  border: 5px dotted #73AD21;
+}
+
+div.fixed {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 200px;
+  border: 5px dotted #73AD21;
+}
+
+div.absolute {
+  position: absolute;
+  top: 60px;
+  right: 0;
+  width: 250px;
+  height: 150px;
+  border: 5px dotted #73AD21;
+}
+div.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  padding: 7px;
+  background-color: #cae8ca;
+  border: 5px dotted #4CAF50;
+}
+</style>
+</head>
+<body>
+//Display property : Inline , Block, none
+<p>menu:</p>
+
+<ul>
+  <li><a href="www.google.com" target="_blank">Hello</a></li>
+  <li><a href="www.google.com" target="_blank">Welcome</a></li>
+  <li><a href="www.google.com" target="_blank">Nur2Var</a></li>
+</ul>
+
+//Max-Width Property
+<div class="e1">This div element</div>
+<br>
+
+<div class="e2">Another div element</div>
+
+//Position
+<div class="static">
+  This div element has position: static;
+</div>
+
+<br>
+<br>
+
+<div class="relative">
+This div element has position: relative;
+</div>
+
+<br>
+<br>
+
+<div class="fixed">
+This div element has position: fixed;
+</div>
+
+<br>
+<br>
+
+<div class="absolute">This div element has position: absolute;</div>
+
+<br>
+<br>
+
+<div class="sticky">Hey !!! Meet sticky!</div>
+
+
+</body>
+</html>
