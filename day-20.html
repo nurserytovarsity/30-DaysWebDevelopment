@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div.first{
+  background-color: #eee;
+  width: 250px;
+  height: 55px;
+  border: 1px solid black;
+  overflow: visible;
+}
+
+div.one {
+  background-color: #eee;
+  width: 350px;
+  height: 50px;
+  border: 1px solid black;
+  overflow: hidden;
+}
+
+div.two {
+  background-color: #eee;
+  width: 450px;
+  height: 100px;
+  border: 1px solid black;
+  overflow: scroll;
+}
+
+div.three{
+  background-color: #eee;
+  width: 200px;
+  height: 100px;
+  border: 1px solid black;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+img {
+  float: right;
+}
+
+span.one-one {
+  display: inline; /* the default for span */
+  width: 120px;
+  height: 120px;
+  padding: 7px;
+  border: 2px dotted blue;  
+  background-color: orange; 
+}
+
+span.two-two {
+  display: inline-block;
+  width: 120px;
+  height: 120px;
+  padding: 7px;
+  border: 2px dotted blue;    
+  background-color: orange; 
+}
+
+span.three-three {
+  display: block;
+  width: 120px;
+  height: 120px;
+  padding: 7px;
+  border: 2px dotted blue;    
+  background-color: orange; 
+}
+ul.pll {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li.pow a {
+  display: block;
+  width: 60px;
+  background-color: #dddddd;
+}
+
+</style>
+</head>
+<body>
+
+<h2>CSS Overflow: Visible</h2>
+<p>By default, the overflow is visible, i.e content will be visible outisde the box.</p>
+
+<div class="first">Lorem djbdhsbmx,ncbhjvcbn,z.kfiregjbnf ,z.chdgjbnzchvcxhjegfhikngnmvgyghfbmdhfjur yritjkdfbndfy ruiejdbss jkdyfklefncd eikrj,fd kehfir eirhjdng dffowie kdhfdjfsdjfhr wwteueiiro dhjkdsfhsdhfkdf d,jfdkjffhiufhdssfjsdfhjrkgrhuriooieorkjhqwje</div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<h2>CSS Overflow : Hidden</h2>
+<p>With the hidden value, the content is hidden</p>
+
+
+<div class="one">Lorem djbdhsbmx,ncbhjvcbn,z.kfiregjbnf ,z.chdgjbnzchvcxhjegfhikngnmvgyghfbmdhfjur yritjkdfbndfy ruiejdbss jkdyfklefncd eikrj,fd kehfir eirhjdng dffowie kdhfdjfsdjfhr wwteueiiro dhjkdsfhsdhfkdf d,jfdkjffhiufhdssfjsdfhjrkgrhuriooieorkjhqwje</div>
+
+
+<h2>CSS Overflow: Scroll</h2>
+<p>the overflow value to scroll,a scrollbar is added to scroll inside the box.</p>
+
+<div class="two">Lorem djbdhsbmx,ncbhjvcbn,z.kfiregjbnf ,z.chdgjbnzchvcxhjegfhikngnmvgyghfbmdhfjur yritjkdfbndfy ruiejdbss jkdyfklefncd eikrj,fd kehfir eirhjdng dffowie kdhfdjfsdjfhr wwteueiiro dhjkdsfhsdhfkdf d,jfdkjffhiufhdssfjsdfhjrkgrhuriooieorkjhqwje</div>
+
+<h2>CSS Overflow : Scroll</h2>
+<p>You can also change the overflow of content horizontally or vertically.</p>
+
+<div class="three">Lorem djbdhsbmx,ncbhjvcbn,z.kfiregjbnf ,z.chdgjbnzchvcxhjegfhikngnmvgyghfbmdhfjur yritjkdfbndfy ruiejdbss jkdyfklefncd eikrj,fd kehfir eirhjdng dffowie kdhfdjfsdjfhr wwteueiiro dhjkdsfhsdhfkdf d,jfdkjffhiufhdssfjsdfhjrkgrhuriooieorkjhqwje</div>
+
+<h2>CSS Float : right</h2>
+<p><img src="download.jpeg" alt="Dog" style="width:180px;height:170px;margin-left:15px;">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit.</p>
+
+
+
+<h1>The display Property</h1>
+
+<h2>display: inline</h2>
+<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum consequat scelerisque elit sit amet consequat. Aliquam erat volutpat. <span class="one-one">Aliquam</span> <span class="one-one">venenatis</span> gravida nisl sit amet facilisis. Nullam cursus fermentum velit sed laoreet. </div>
+
+<h2>display: inline-block</h2>
+<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum consequat scelerisque elit sit amet consequat. Aliquam erat volutpat. <span class="two-two">Aliquam</span> <span class="two-two">venenatis</span> gravida nisl sit amet facilisis. Nullam cursus fermentum velit sed laoreet. </div>
+
+<h2>display: block</h2>
+<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum consequat scelerisque elit sit amet consequat. Aliquam erat volutpat. <span class="three-three">Aliquam</span> <span class="three-three">venenatis</span> gravida nisl sit amet facilisis. Nullam cursus fermentum velit sed laoreet. </div>
+
+
+<h2>Simple Nav-Bar</h2>
+
+<ul>
+  <li><a href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+</ul>
+
+<h2>Vertical Nav-Bar</h2>
+
+<ul class="pll">
+  <li class="pow"><a href="#home">Home</a></li>
+  <li class="pow"><a href="#news">News</a></li>
+  <li class="pow"><a href="#contact">Contact</a></li>
+  <li class="pow"><a href="#about">About</a></li>
+</ul>
+
+</body>
+</html>
