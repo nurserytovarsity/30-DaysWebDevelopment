@@ -1,0 +1,60 @@
+<html>
+   <head>   
+      <script type = "text/javascript">
+         function hieOne() {
+            console.log("Hello there from nur2var!");
+         }
+
+
+          function hieAgain(name, age) {
+            console.log (name + "  " + age + " Var");
+         }
+         function over() {
+               document.write ("Mouse Over");
+            }            
+         function out() {
+               document.write ("Mouse Out");
+            }         
+         
+
+         
+      </script>
+      
+   </head>
+   
+   <body>
+      <p>Calling the function without parameters</p>      
+      <form>
+         <input type = "button" onclick = "hieOne()" value = "Say Hie">
+      </form>  
+
+      <p>Calling the function with parameters</p>      
+      <form>
+         <input type = "button" onclick = "hieAgain('Nur', 2)" value = "Say Hie Again">
+      </form>   
+
+      
+
+      <h2>JavaScript Objects</h2>
+
+      <p id="try2"></p>
+      <script>
+      var person = {
+            frstName: "Nursery",
+            lastName: "Varsity",
+            work: "Upload Video",
+            
+          };
+
+         // Display some data from the object:
+         document.getElementById("try2").innerHTML =
+         person.frstName + " to " + person.lastName +  person.work + " on youtube.";
+      </script>
+
+
+      <p>Try your mouse inside this division to see the magic</p>      
+      <div onmouseover = "over()" onmouseout = "out()">
+      <h2> You are inside the division </h2>
+      </div>      
+       </body>
+</html>
