@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Strings</h2>
+
+
+<p id="try1"></p>
+
+<script>
+var asr1 = "It's raining";
+var asr2 = "It feels 'Moisture'";
+var asr3 = 'it feels "Moisture"'; 
+
+document.getElementById("try1").innerHTML =
+asr1 + "<br>" + asr2 + "<br>" + asr3; 
+</script>
+
+<h2>String Length</h2>
+<p id="try2"></p>
+
+<script>
+var txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+document.getElementById("try2").innerHTML = txt.length;
+</script>
+
+
+<h2>Special Character</h2>
+
+<p id="try3"></p>
+
+<script>
+var x = "It\'s Raining";
+document.getElementById("try3").innerHTML = x; 
+</script>
+
+
+<h2>JavaScript String Methods (indexOf)</h2>
+
+
+
+<p id="try4"></p>
+
+<script>
+var str = "Please find where 'find' is there!";
+var pos = str.indexOf("find");
+document.getElementById("try4").innerHTML = pos;
+</script>
+
+
+<h2>JavaScript String Methods (Slice)</h2>
+
+
+<p id="try5"></p>
+
+<script>
+var str = "Apple, Banana, Kiwi";
+var output = str.slice(7,13);
+document.getElementById("try5").innerHTML = output; 
+</script>
+
+</body>
+</html>
+
