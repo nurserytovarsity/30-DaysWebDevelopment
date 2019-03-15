@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Arrays</h2>
+
+<p id="try"></p>
+
+<script>
+var subjects = ["Sub1", "Sub2", "Sub3"];
+document.getElementById("try").innerHTML = subjects;
+
+//How to access the elements using indexing
+document.getElementById("try").innerHTML = subjects[0];
+</script>
+
+
+<h2>JavaScript Array using new keyword</h2>
+
+<p id="try2"></p>
+
+<script>
+var subject = new Array("Sb1", "Sb2", "Sb3");
+document.getElementById("try2").innerHTML = subject;
+</script>
+
+<h2>JavaScript Objects</h2>
+<p id="try3"></p>
+
+<script>
+var personName = {frstName:"Nomo", lstName:"oew", age:56};
+document.getElementById("try3").innerHTML = personName["frstName"];
+</script>
+
+
+<h2>JavaScript Array Method (Length)</h2>
+<p id="try4"></p>
+
+<script>
+var fruitsName = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("try4").innerHTML = fruitsName.length;
+</script>
+ 
+<h2>Javascript array method join()</h2>
+
+
+<p id="try5"></p>
+
+<script>
+var fruitsname = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("try5").innerHTML = fruitsname.join(" ** ");
+</script>
+
+
+<h2>Javascript Array Method push()</h2>
+
+
+<button onclick="myFunction()">Click</button>
+
+<p id="try6"></p>
+
+<script>
+var fruitsNames = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("try6").innerHTML = fruitsNames;
+
+function myFunction() {
+  fruits.push("Pineapple");
+  document.getElementById("try6").innerHTML = fruitsNames;
+}
+</script>
+
+
+
+<h2>JavaScript Array Metho Splice()</h2>
+
+
+
+<button onclick="myFunction1()">Try it</button>
+
+<p id="try7"></p>
+<p id="try8"></p>
+
+<script>
+var fruitName= ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("try7").innerHTML = "Original Array:<br>" + fruitName;
+function myFunction1() {
+  fruitName.splice(2, 0, "Lemon", "Kiwi");
+  document.getElementById("try8").innerHTML = "New Array:<br>" + fruitName;
+}
+</script>
+</body>
+</html>
+
